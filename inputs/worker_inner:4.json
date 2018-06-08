@@ -37,7 +37,7 @@
       "name": "pull_base_image",
       "args": {
         "parent_registry": "{{REGISTRY_URI}}",
-        "parent_registry_insecure": true
+        "parent_registry_insecure": false
       }
     },
     {
@@ -114,7 +114,7 @@
       "name": "tag_and_push",
       "args": {
         "registries": {
-          "{{REGISTRY_URI}}": { "insecure": true }
+          "{{REGISTRY_URI}}": { "insecure": false }
         }
       }
     },

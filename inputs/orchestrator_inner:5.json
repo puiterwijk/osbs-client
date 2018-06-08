@@ -40,7 +40,7 @@
       "name": "pull_base_image",
       "args": {
         "parent_registry": "{{REGISTRY_URI}}",
-        "parent_registry_insecure": true
+        "parent_registry_insecure": false
       }
     },
     {
@@ -108,7 +108,7 @@
       "name": "group_manifests",
       "args": {
         "registries": {
-          "{{REGISTRY_URI}}": { "insecure": true }
+          "{{REGISTRY_URI}}": { "insecure": false }
         }
       }
     },
@@ -141,7 +141,7 @@
     {
       "name": "pulp_pull",
       "args": {
-        "insecure": true
+        "insecure": false
       }
     },
     {
@@ -159,7 +159,7 @@
       "name": "delete_from_registry",
       "args": {
         "registries": {
-          "{{REGISTRY_URI}}": { "insecure": true }
+          "{{REGISTRY_URI}}": { "insecure": false }
         }
       }
     },

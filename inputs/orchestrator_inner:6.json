@@ -84,7 +84,7 @@
     {
       "name": "pulp_pull",
       "args": {
-        "insecure": true
+        "insecure": false
       }
     },
     {
